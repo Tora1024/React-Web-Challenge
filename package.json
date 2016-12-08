@@ -1,0 +1,51 @@
+{
+  "name": "React-Web-Challenge",
+  "version": "1.0.0",
+  "description": "Simple react app, coupled with redux and some nice css",
+  "main": "index.js",
+  "repository": "no repo",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "Hector",
+  "license": "no-licence",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "eslint-config-rallycoding": "^3.1.0",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.2",
+    "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^3.10.1",
+    "normalize": "^0.3.1",
+    "react": "^0.14.3",
+    "react-debounce-input": "^2.4.2",
+    "react-dom": "^0.14.3",
+    "react-drag-and-drop": "^2.1.0",
+    "react-image-fallback": "^3.3.0",
+    "react-modal": "^1.5.2",
+    "react-redux": "^4.0.0",
+    "redux": "^3.0.4",
+    "redux-thunk": "^2.1.0"
+  },
+  "eslintConfig": {
+    "extends": "rallycoding",
+    "env": {
+      "es6": true,
+      "browser": true
+    }
+  }
+}

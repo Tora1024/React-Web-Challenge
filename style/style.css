@@ -1,0 +1,238 @@
+/*Font face used for this app*/
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+/* Some inits */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Searchbar styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    background: #00aced;
+    justify-content: space-around;
+}
+
+.logo-title {
+    color: #fff;
+    font-size: 24px;
+}
+
+.search-input {
+    border-radius: 20px;
+    border: none;
+    padding: 5px 5px 5px 10px;
+    width: 100px;
+    color: #00aced;
+    background-color: #fff;
+    font-size: 16px;
+    transition: all 1s;
+    outline: none;
+}
+
+.search-input:hover {
+    width: 300px;
+}
+
+/* Post Items styles */
+.data-container {
+    width: 60%;
+    margin: auto;
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.post-image {
+    object-fit: cover;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: 2px solid #e6e6e6;
+}
+
+.post-description {
+    margin-left: 10px;
+    width: 80%;
+}
+
+.post-author {
+    text-transform: capitalize;
+    color: #00aced;
+}
+
+.post-title {
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.posts-footer {
+    display: flex;
+    font-size: 12px;
+    color: gray;
+}
+
+.posts-footer-comments, .posts-footer-ups, .posts-footer-downs {
+    margin: 0 20px;
+}
+
+.posts-footer-comments:before {
+    width: 16px;
+    content: " ";
+    background: url(../../images/icon-sprite.png) 0 0;
+    position: absolute;
+    margin-left: -20px;
+    height: 16px;
+}
+
+.posts-footer-ups:before {
+    width: 16px;
+    content: " ";
+    background: url(../../images/icon-sprite.png) 0 32px;
+    position: absolute;
+    margin-left: -20px;
+    height: 16px;
+}
+.posts-footer-downs:before {
+    width: 16px;
+    content: " ";
+    background: url(../../images/icon-sprite.png) 0 16px;
+    position: absolute;
+    margin-left: -20px;
+    height: 16px;
+}
+
+/* Error Msg */
+.error-container {
+	text-align: center;
+}
+
+/* Post Drag and Drop */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(64, 64, 64, 0.8);
+    transition: all 1s;
+}
+
+.modal-container {
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    bottom: 20%;
+    right: 20%;
+    outline: none;
+    transition: all 1s;
+}
+
+.modal-item-box {
+    position: fixed;
+    width: 280px;
+    border: 2px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.modal-post-container {
+    top: 20%;
+    left: 20%;
+    cursor: pointer;
+}
+
+.modal-post-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.modal-post-author {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #00aced;
+}
+
+.modal-post-title {
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.modal-reddit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 20%;
+    right: 20%;
+}
+
+.modal-email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    right: 20%;
+}
+
+.modal-inside-images {
+    height: 100px;
+}
+
+.modal-inside-title {
+    color: #00aced;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -80px 0 0 -70px;
+}
+
+/* Loading */
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
